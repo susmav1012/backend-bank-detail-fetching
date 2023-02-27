@@ -1,10 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const pg = require('pg');
-const serverless=require('serverless-http')
-const router=express.Router();
-
-
 
 const app = express();
 
@@ -19,15 +15,7 @@ const pool = new pg.Pool({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-router.get("/",(req,res)=>{
-  res.json({
-    message:"host"
-  })
-})
 
-app.use('/.netlify/functions/api',router)
-module.exports=app;
-module.exports.handler=serverless(app)
 
 
 // GET /bank-accounts/search?q=<search_term>&limit=<limit>&offset=<offset>
@@ -36,7 +24,7 @@ app.get('/bankdetail/search', (req, res) => {
   const limit = parseInt(req.query.limit);
   const offset = parseInt(req.query.offset);
   const sqlQuery = `SELECT * FROM bankdetail
-  WHERE  LOWER(city) LIKE $1 or LOWER(branch) LIKE $1  ORDER BY ifsc ASC LIMIT $2 OFFSET $3;`;
+  WHERE  LOWER(city) LIKE $1 or LOWER(branch) LIKE $1 or LOWER(states) LIKE $1 or LOWER(district) LIKE $1 or LOWER(address) LIKE $1  ORDER BY ifsc ASC LIMIT $2 OFFSET $3;`;
 
   pool.query(sqlQuery, [`%${searchQuery.toLowerCase()}%`, limit, offset], (err, result) => {
     if (err) {
