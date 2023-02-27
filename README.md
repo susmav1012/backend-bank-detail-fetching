@@ -19,7 +19,7 @@ Create a nodejs application by creating a folder and running the following comma
 -->npm install pg --save
 After this node_modules folder will be created.
 Follow the procedure in index.js
-1) Import express,pg and bodyparser. Express is for creating API. pg is for adding posgreSQL database.
+1) Import express,pg and bodyparser. Express is for creating API. pg is for adding postgreSQL database.
 2) Use get() function from express to get the API and create a query for CASE 1 (/search/API). Return the rows that responds to the query.
 3) Use get() function from express to get the API and create a query for CASE 2 (/branch/API). Return the rows that responds to the query.
 4) Run using node <filename> or npm start
