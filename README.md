@@ -30,19 +30,34 @@ Run the project:
 **************************
 ![image](https://user-images.githubusercontent.com/106637847/221558752-bb9e2e30-f6f7-4cd2-9ae2-4285c6b6d63a.png)
 
+Deployed link:
+***************************
+https://bank-supabase-l6qd.vercel.app/
+
 
 Case 1 output:
 ***************************
 http://localhost:3000/bankdetail/search?q=Mumbai&limit=2&offset=1
 ![image](https://user-images.githubusercontent.com/106637847/221741492-1ae3fa86-b35a-4d3b-987e-6ef0368794e4.png)
 
+https://bank-supabase-l6qd-k1kdoleew-susmav1012.vercel.app/api/search?q=Mumbai&limit=2&offset=1
+![image](https://user-images.githubusercontent.com/106637847/221764505-5b5508d9-9a01-415f-b22c-c4df586a174e.png)
+
+
 Case 2 output:
 ****************************
 http://localhost:3000/bankdetail/branch?q=LONI&limit=1&offset=0
 ![image](https://user-images.githubusercontent.com/106637847/221741689-84d59fd5-f92f-41df-bf1e-ebbf5d5c6270.png)
 
+https://bank-supabase-l6qd-k1kdoleew-susmav1012.vercel.app/api/branch?q=LONI&limit=1&offset=0
+![image](https://user-images.githubusercontent.com/106637847/221763672-a67e67ec-9a34-4efe-839a-ec1f15b9fd66.png)
+
 
 http://localhost:3000/bankdetail/branch?q=LONI&limit=1&offset=1
 ![image](https://user-images.githubusercontent.com/106637847/221741618-77076ec0-bf92-44eb-aeeb-65da8311048b.png)
+
+https://bank-supabase-l6qd-k1kdoleew-susmav1012.vercel.app/api/branch?q=LONI&limit=1&offset=1
+![image](https://user-images.githubusercontent.com/106637847/221764012-da147469-5859-4039-9489-e68a3e2953d5.png)
+
 
 
