@@ -34,14 +34,15 @@ Run the project:
 Case 1 output:
 ***************************
 http://localhost:3000/bankdetail/search?q=Mumbai&limit=2&offset=1
-![image](https://user-images.githubusercontent.com/106637847/221558255-732253f9-b1be-4790-846a-2f15b20d9a83.png)
+![image](https://user-images.githubusercontent.com/106637847/221741492-1ae3fa86-b35a-4d3b-987e-6ef0368794e4.png)
 
 Case 2 output:
 ****************************
 http://localhost:3000/bankdetail/branch?q=LONI&limit=1&offset=0
-![image](https://user-images.githubusercontent.com/106637847/221558565-8c8288d7-139c-40ac-a6c8-91312c25b6d1.png)
+![image](https://user-images.githubusercontent.com/106637847/221741689-84d59fd5-f92f-41df-bf1e-ebbf5d5c6270.png)
+
 
 http://localhost:3000/bankdetail/branch?q=LONI&limit=1&offset=1
-![image](https://user-images.githubusercontent.com/106637847/221558664-370ca144-a04b-4494-b3e2-089c6d565b9d.png)
+![image](https://user-images.githubusercontent.com/106637847/221741618-77076ec0-bf92-44eb-aeeb-65da8311048b.png)
 
 
