@@ -32,7 +32,7 @@ Run the project:
 
 Deployed link:
 ***************************
-https://bank-supabase-l6qd.vercel.app/
+https://backend-supabase.vercel.app/
 
 
 Case 1 output:
